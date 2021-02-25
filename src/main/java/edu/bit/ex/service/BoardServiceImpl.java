@@ -35,4 +35,34 @@ public class BoardServiceImpl implements BoardService {
 		return mapper.getPageTotal(cri);
 	}
 
+	@Override
+	public void writeAdd(BoardVO vo) {
+		mapper.writeAdd(vo);
+		
+	}
+
+	@Override
+	public List<BoardVO> getContent(int getbId) {
+		// TODO Auto-generated method stub
+		return mapper.getContentView(getbId);
+	}
+
+	@Override
+	public void delete(int getbId) {
+		mapper.delete(getbId);
+		
+	}
+
+	@Override
+	public void modify(BoardVO vo) {
+		mapper.modify(vo);
+	}
+
+	@Override
+	public void replyAdd(BoardVO vo) {
+		mapper.replyAdd(vo);
+		mapper.replySort(vo);
+		
+	}
+
 }

@@ -15,6 +15,18 @@ public interface BoardMapper {
 	List<BoardVO> getPageList(Criteria cri);
 
 	int getPageTotal(Criteria cri);
+
+	void writeAdd(BoardVO vo);
+
+	List<BoardVO> getContentView(int getbId);
+
+	void delete(int getbId);
+
+	void modify(BoardVO vo);
+
+	void replyAdd(BoardVO vo);
+
+	void replySort(BoardVO vo);
 	
 	
 

@@ -3,8 +3,10 @@ package edu.bit.ex.vo;
 import java.sql.Date;
 
 import lombok.Data;
+import lombok.ToString;
 
 @Data
+@ToString
 public class BoardVO {
 	
 	private int bId;

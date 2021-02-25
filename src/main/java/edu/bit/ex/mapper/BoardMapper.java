@@ -27,6 +27,8 @@ public interface BoardMapper {
 	void replyAdd(BoardVO vo);
 
 	void replySort(BoardVO vo);
+
+	void upHit(int getbId);
 	
 	
 

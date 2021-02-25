@@ -65,4 +65,9 @@ public class BoardServiceImpl implements BoardService {
 		
 	}
 
+	@Override
+	public void upHit(int getbId) {
+		mapper.upHit(getbId);
+	}
+
 }

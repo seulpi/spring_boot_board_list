@@ -60,6 +60,7 @@ public class BoardController {
 	public String contents_view(BoardVO vo, Model model) {
 		
 		model.addAttribute("content", service.getContent(vo.getbId()));
+		service.upHit(vo.getbId());
 		
 		return "content_view";
 	}

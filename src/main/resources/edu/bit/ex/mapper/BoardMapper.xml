@@ -65,4 +65,10 @@ update mvc_board set bStep=#{bStep}+1 where bGroup=#{bGroup} and bStep >#{bStep}
 ]]>
 </update>
 
+<update id="upHit">
+<![CDATA[
+update mvc_board set bHit=bHit+1 where bId=#{getBid}
+]]>
+</update>
+
 </mapper>

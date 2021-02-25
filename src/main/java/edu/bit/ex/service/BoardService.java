@@ -23,7 +23,9 @@ public interface BoardService {
 
 	public void modify(BoardVO vo);
 
-	public void replyAdd(BoardVO vo); 
+	public void replyAdd(BoardVO vo);
+
+	public void upHit(int getbId); 
 	
 
 }
